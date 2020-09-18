@@ -13,9 +13,8 @@ public class Program {
 			
 		SellerDao sellerDao = DaoFactory.createSellerDao();
 
-		System.out.println("=== TEST 2: seller findByDepartment ===");
-		Department department = new Department(2, null);
-		List<Seller> list = sellerDao.findByDepartment(department);
+		System.out.println("=== TEST 3: seller findAll ===");
+		List<Seller> list = sellerDao.findAll();
 
 
 		for(Seller obj : list) {
